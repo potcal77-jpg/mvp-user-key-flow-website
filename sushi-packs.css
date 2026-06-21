@@ -1,0 +1,207 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Hind Guntur', sans-serif;
+}
+
+body {
+    background-color: #f4f4f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px 0;
+}
+
+/* Base Device Mock Frame Dimension Constants */
+.app-container {
+    width: 100%;
+    max-width: 430px;
+    height: 860px;
+    background-color: #ffffff;
+    border-radius: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header styling rules */
+.app-header {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 15px 20px 5px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #1a1a1a;
+}
+
+.nav-links a {
+    color: #888888;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    margin-right: 15px;
+}
+
+.nav-links a.active {
+    color: #ffffff;
+}
+
+.nav-icons i {
+    color: #ffffff;
+    font-size: 16px;
+    margin-left: 15px;
+}
+
+/* Dynamic Core Inner Canvas Layout Wrapper */
+.category-content-area {
+    background-color: #ffffff;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+/* ==========================================================================
+   FEATURED BANNER HEADER
+   ========================================================================== */
+.featured-category-banner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px 20px 10px 20px;
+}
+
+.banner-frame-container {
+    position: relative;
+    width: 240px;
+    height: 155px;
+    border: 4px solid #ff8427;
+    border-radius: 24px;
+    margin-bottom: 8px;
+}
+
+.banner-frame-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 18px;
+}
+
+/* Decorative Orange Circular Handles matching your mockup detail */
+.orange-dot {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background-color: #e06d16;
+    border-radius: 50%;
+}
+.dot-tl { top: -8px; left: -8px; }
+.dot-tr { top: -8px; right: -8px; }
+.dot-bl { bottom: -8px; left: -8px; }
+.dot-br { bottom: -8px; right: -8px; }
+
+.category-main-title {
+    color: #ff8427;
+    font-size: 22px;
+    font-weight: 700;
+    text-align: center;
+    line-height: 1.2;
+}
+
+/* ==========================================================================
+   2-COLUMN ITEM PRODUCTS GRID
+   ========================================================================== */
+.items-grid {
+    padding: 10px 16px 20px 16px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px 16px;
+    overflow-y: auto;
+    flex: 1;
+}
+
+.items-grid::-webkit-scrollbar {
+    width: 4px;
+}
+.items-grid::-webkit-scrollbar-thumb {
+    background-color: #dddddd;
+    border-radius: 10px;
+}
+
+.product-item-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Circular Clip Border Frames for Products */
+.product-img-circle {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-bottom: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    background-color: #f9f9f9;
+}
+
+.product-img-circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.product-title {
+    color: #ff8427;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 3px;
+}
+
+/* Metadata Text Stack Layout formatting matching your design layout */
+.product-meta-details {
+    display: flex;
+    flex-direction: column;
+    gap: 1px;
+}
+
+.meta-line {
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+.price-tag {
+    color: #000000;
+    font-weight: 700;
+}
+
+.expiry-tag {
+    color: #1e6b38;
+}
+
+.distance-tag {
+    color: #1e6b38;
+}
+
+/* ==========================================================================
+   FOOTER AREA
+   ========================================================================== */
+.app-footer {
+    background-color: #000000;
+    color: #666666;
+    padding: 15px 20px;
+    text-align: center;
+    font-size: 12px;
+    border-top: 1px solid #1a1a1a;
+}
+
+.footer-copy { margin-bottom: 2px; }
+.footer-links { display: flex; justify-content: center; gap: 12px; }
+.footer-links a { color: #666666; text-decoration: none; }

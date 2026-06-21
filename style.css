@@ -1,0 +1,173 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Hind Guntur', sans-serif;
+}
+
+body {
+    background-color: #f4f4f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px 0;
+}
+
+/* Mobile Phone Canvas Frame */
+.app-container {
+    width: 100%;
+    max-width: 430px;
+    height: 860px;
+    background-color: #ffffff;
+    border-radius: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Header styling */
+.app-header {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 15px 20px 5px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #1a1a1a;
+}
+
+.nav-links a {
+    color: #888888;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    margin-right: 15px;
+}
+
+.nav-links a.active {
+    color: #ffffff;
+}
+
+.nav-icons i {
+    color: #ffffff;
+    font-size: 16px;
+    margin-left: 15px;
+}
+
+/* Scrollable layout feed content list block */
+.food-feed {
+    background-color: #f4f4f6; 
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    flex: 1;
+    overflow-y: auto;
+}
+
+.food-feed::-webkit-scrollbar {
+    width: 4px;
+}
+.food-feed::-webkit-scrollbar-thumb {
+    background-color: #dddddd;
+    border-radius: 10px;
+}
+
+.food-card {
+    background-color: #000000;
+    border-radius: 32px;
+    padding: 24px;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+}
+
+.food-title {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 12px;
+    text-align: center;
+    line-height: 1.2;
+}
+
+.image-wrapper {
+    position: relative;
+    width: 100%;
+    height: 220px;
+    border-radius: 20px;
+    margin-bottom: 16px;
+}
+
+.image-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+.discount-tag {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    background-color: #ff8427;
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: 800;
+    width: 68px;
+    height: 68px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    line-height: 1.1;
+    transform: rotate(12deg);
+    clip-path: polygon(50% 0%, 63% 13%, 81% 6%, 81% 25%, 94% 25%, 87% 43%, 99% 55%, 83% 65%, 85% 83%, 68% 80%, 61% 96%, 47% 85%, 31% 94%, 28% 76%, 11% 77%, 16% 59%, 2% 49%, 17% 39%, 12% 21%, 29% 24%, 34% 6%);
+}
+
+.food-info {
+    width: 100%;
+    text-align: left;
+    padding-left: 4px;
+    margin-bottom: 15px;
+}
+
+.stars {
+    color: #ff8427;
+    font-size: 16px;
+    margin-bottom: 6px;
+    display: flex;
+    gap: 3px;
+}
+
+.stars .gray-star { color: #ffffff; }
+.info-line { font-size: 16px; margin-bottom: 2px; line-height: 1.3; }
+
+.grab-btn {
+    font-family: 'Hind Guntur', sans-serif;
+    width: 100%;
+    max-width: 260px;
+    background-color: #ff8427;
+    color: #ffffff;
+    border: none;
+    border-radius: 12px;
+    padding: 8px 0 6px 0;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    align-self: center;
+}
+
+.app-footer {
+    background-color: #000000;
+    color: #666666;
+    padding: 15px 20px;
+    text-align: center;
+    font-size: 12px;
+    border-top: 1px solid #1a1a1a;
+}
+
+.footer-copy { margin-bottom: 2px; }
+.footer-links { display: flex; justify-content: center; gap: 12px; }
+.footer-links a { color: #666666; text-decoration: none; }
