@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Hind Guntur', sans-serif;
+}
+
+body {
+    background-color: #f4f4f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px 0;
+}
+
+.app-container {
+    width: 100%;
+    max-width: 430px;
+    height: 860px;
+    background-color: #ffffff;
+    border-radius: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.app-header {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 15px 20px 5px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links a {
+    color: #888888;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    margin-right: 15px;
+}
+
+.nav-links a.active {
+    color: #ffffff;
+}
+
+.nav-icons i {
+    color: #ffffff;
+    font-size: 16px;
+    margin-left: 15px;
+}
+
+.deals-content-area {
+    background-color: #ffffff;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.deals-page-title {
+    color: #ff8427;
+    font-size: 26px;
+    font-weight: 700;
+    text-align: center;
+    padding: 15px 0 5px 0;
+}
+
+.deals-scroll-feed {
+    background-color: #ffffff;
+    padding: 10px 24px;
+    flex: 1;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Big Dark Card Container Frame */
+.mega-deal-card {
+    background-color: #000000;
+    border-radius: 32px;
+    width: 100%;
+    padding: 24px;
+    color: #ffffff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.deal-card-title {
+    font-size: 20px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.deal-image-frame {
+    position: relative;
+    width: 100%;
+    height: 200px;
+    border-radius: 20px;
+    margin-bottom: 15px;
+}
+
+.deal-image-frame img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 20px;
+}
+
+/* Starburst Badge Element Component Design */
+.burst-discount-badge {
+    position: absolute;
+    top: -15px;
+    right: -15px;
+    background-color: #ff8427;
+    color: #ffffff;
+    font-size: 11px;
+    font-weight: 800;
+    width: 68px;
+    height: 68px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    line-height: 1.1;
+    transform: rotate(12deg);
+    clip-path: polygon(50% 0%, 63% 13%, 81% 6%, 81% 25%, 94% 25%, 87% 43%, 99% 55%, 83% 65%, 85% 83%, 68% 80%, 61% 96%, 47% 85%, 31% 94%, 28% 76%, 11% 77%, 16% 59%, 2% 49%, 17% 39%, 12% 21%, 29% 24%, 34% 6%);
+}
+
+.deal-metadata {
+    width: 100%;
+    text-align: left;
+    padding-left: 2px;
+    margin-bottom: 15px;
+}
+
+.rating-stars-row {
+    color: #ff8427;
+    font-size: 16px;
+    margin-bottom: 8px;
+    display: flex;
+    gap: 3px;
+}
+
+.meta-row {
+    font-size: 15px;
+    margin-bottom: 3px;
+    line-height: 1.3;
+}
+
+.card-action-anchor {
+    text-decoration: none;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.grab-btn {
+    font-family: 'Hind Guntur', sans-serif;
+    width: 100%;
+    max-width: 240px;
+    background-color: #ff8427;
+    color: #ffffff;
+    border: none;
+    border-radius: 12px;
+    padding: 8px 0 6px 0;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.app-footer {
+    background-color: #000000;
+    color: #666666;
+    padding: 15px 20px;
+    text-align: center;
+    font-size: 12px;
+    border-top: 1px solid #1a1a1a;
+}
+
+.footer-copy { margin-bottom: 2px; }
+.footer-links { display: flex; justify-content: center; gap: 12px; }
+.footer-links a { color: #666666; text-decoration: none; }
+
+/* Interactive Transitions & Micro-interactions */
+.grab-btn, .confirm-action-btn, .routing-action-btn {
+    transition: transform 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275), background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.grab-btn:hover, .confirm-action-btn:hover {
+    background-color: #e37414 !important; 
+    transform: scale(1.04);
+    box-shadow: 0 6px 15px rgba(255, 137, 37, 0.3);
+}
+
+.routing-action-btn:hover {
+    background-color: hsl(25, 92%, 62%) !important; 
+    transform: scale(1.04);
+    box-shadow: 0 6px 15px rgba(252, 163, 100, 0.3);
+}
+
+.grab-btn:active, .confirm-action-btn:active, .routing-action-btn:active {
+    transform: scale(0.98); 
+}
