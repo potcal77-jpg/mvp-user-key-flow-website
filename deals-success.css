@@ -1,0 +1,135 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Hind Guntur', sans-serif;
+}
+
+body {
+    background-color: #f4f4f6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px 0;
+}
+
+.app-container {
+    width: 100%;
+    max-width: 430px;
+    height: 860px;
+    background-color: #ffffff;
+    border-radius: 30px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.app-header {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 15px 20px 5px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-links a {
+    color: #888888;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 600;
+    margin-right: 15px;
+}
+
+.nav-links a.active { color: #ffffff; }
+.nav-icons i { color: #ffffff; font-size: 16px; margin-left: 15px; }
+
+/* White Shell Content Area padding context */
+.success-panel-canvas {
+    background-color: #ffffff;
+    flex: 1;
+    padding: 24px 16px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Big Unified Rounded Internal Dark Display Sheet */
+.success-dark-viewport-sheet {
+    background-color: #000000;
+    border-radius: 32px;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 24px 40px 24px; /* Centers the content items stack neatly down */
+}
+
+/* Congrats Alert Message Block styling rules */
+.congrats-alert-message-box {
+    background-color: #fca364; /* Soft desaturated orange shade matching mock specifications */
+    width: 100%;
+    max-width: 270px;
+    border-radius: 12px;
+    padding: 12px 10px;
+    text-align: center;
+    color: #000000;
+    margin-bottom: 20px;
+}
+
+.congrats-title {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 2px;
+    line-height: 1.2;
+}
+
+.congrats-subtext {
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+/* Feedback Stars Element styling block rules */
+.feedback-stars-row-block {
+    color: #ff8427;
+    font-size: 20px;
+    display: flex;
+    gap: 4px;
+    margin-bottom: 25px;
+}
+
+.finish-flow-anchor {
+    width: 100%;
+    max-width: 210px;
+    text-decoration: none;
+}
+
+/* Directions Action Button configuration styling rules matching layout target */
+.routing-action-btn {
+    font-family: 'Hind Guntur', sans-serif;
+    width: 100%;
+    background-color: #fca364; /* Soft desaturated orange mapping details layout */
+    color: #000000;
+    border: none;
+    border-radius: 10px;
+    padding: 8px 0 6px 0;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    text-align: center;
+}
+
+.app-footer {
+    background-color: #000000;
+    color: #666666;
+    padding: 15px 20px;
+    text-align: center;
+    font-size: 12px;
+    border-top: 1px solid #1a1a1a;
+}
+
+.footer-copy { margin-bottom: 2px; }
+.footer-links { display: flex; justify-content: center; gap: 12px; }
+.footer-links a { color: #666666; text-decoration: none; }
